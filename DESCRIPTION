@@ -4,11 +4,14 @@ Title: Find clusters by network modularity
 Version: 0.5
 Date: 2015-08-03
 Author: Yishai Shimoni
-Maintainer: Yishai Shimoni <ys2559@columbia.edu>
+Maintainer: Yishai Shimoni <shimoni.yishai@gmail.com>
 Description: This package implements the PhenoGraph algorithm, which first
     creates an adjacancy matrix according to k-nearest neighbours, and then
     uses the Louvain algorithm to identify "communities" by maximizing the
-    modularity.
+    modularity. The algorithm appeared in the paper
+    Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells
+    that Correlate with Prognosis, Levine, Jacob H. et al.
+    Cell , Volume 162 , Issue 1 , 184 - 197
 Depends:
     amap
 License: BSD
