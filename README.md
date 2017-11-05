@@ -22,7 +22,8 @@ ggplot(iris_unique, aes(x=Sepal.Length, y=Sepal.Width, col=Species, shape=phenog
 ```
 
 ## References
-The example is adapted from another independent implementation of phenoGraph at `https://github.com/JinmiaoChenLab/Rphenograph`
+The example is adapted from another independent implementation of phenoGraph at https://github.com/JinmiaoChenLab/Rphenograph
 
 The algorithm is taken from 
+
 Levine JH, Simonds EF, Bendall SC, Davis KL, Amir ED, Tadmor MD, et al. Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells that Correlate with Prognosis. Cell. Elsevier Inc.; 2015; 1–14. doi:10.1016/j.cell.2015.05.047
