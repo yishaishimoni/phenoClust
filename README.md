@@ -7,7 +7,7 @@ To install directly from github requires `devtools`.
 devtools::install_github('yishaishimoni/phenoClust')
 ```
 
-This will install a package called `phenoGraph` on your system.
+This will install a package called `phenoGraph` on your system (my apologies for the confusion with repository vs. package names).
 
 ## Usage
 ```R
@@ -22,7 +22,7 @@ ggplot(iris_unique, aes(x=Sepal.Length, y=Sepal.Width, col=Species, shape=phenog
 ```
 
 ## References
-The example is adapted from another independent implementation of phenoGraph at https://github.com/JinmiaoChenLab/Rphenograph
+The example (but not the code) is adapted from another independent implementation of phenoGraph at https://github.com/JinmiaoChenLab/Rphenograph
 
 The algorithm is taken from 
 
