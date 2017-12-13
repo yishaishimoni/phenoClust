@@ -4,21 +4,21 @@ This package implements the PhenoGraph algorithm, which is based on the Louvain 
 ## Installation
 To install directly from github requires `devtools`.
 ```R
-devtools::install_github('yishaishimoni/phenoClust')
+> devtools::install_github('yishaishimoni/phenoClust')
 ```
 
 This will install a package called `phenoGraph` on your system (my apologies for the confusion with repository vs. package names).
 
 ## Usage
 ```R
-require(phenoGraph)
-require(ggplot2)
-iris_unique <- unique(iris) # Remove duplicates
-data <- as.matrix(iris_unique[,1:4])
-Rphenograph_out <- phenoClust(t(data))
-modularity(G=Rphenograph_out$G, C = Rphenograph_out$C)
-iris_unique$phenograph_cluster <- factor(Rphenograph_out$C)
-ggplot(iris_unique, aes(x=Sepal.Length, y=Sepal.Width, col=Species, shape=phenograph_cluster)) + geom_point(size = 3)+theme_bw()
+> require(phenoGraph)
+> require(ggplot2)
+> iris_unique <- unique(iris) # Remove duplicates
+> data <- as.matrix(iris_unique[,1:4])
+> Rphenograph_out <- phenoClust(t(data))
+> modularity(G=Rphenograph_out$G, C = Rphenograph_out$C)
+> iris_unique$phenograph_cluster <- factor(Rphenograph_out$C)
+> ggplot(iris_unique, aes(x=Sepal.Length, y=Sepal.Width, col=Species, shape=phenograph_cluster)) + geom_point(size = 3)+theme_bw()
 ```
 
 ## References
